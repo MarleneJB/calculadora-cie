@@ -1,36 +1,74 @@
-.calculator {
-    width: 150px;
-    text-align: center;
-    color: #999;
-}
 
-.result {
-    font-size: 3.0em;
+  .calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-group {
+    margin: 10px;
+  }
+  
+  .input-group-addon {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .operator1,
+  .operator2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .icons-container {
+    margin-top: 10px;
+  }
+  
+  .addition-button,
+  .substraction-button,
+  .division-button,
+  .multiplication-button,
+  .exponential-button,
+  .sqrt-button {
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  .result {
+    font-size: 2.0em;
     font-weight: bold;
     color: red;
+    margin-top: 10px;
+    display: block;
+  }
 
-}
-
-.operator1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: black;
-
-}
-
-.operator2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: blue;
-
-}
-
-.addition-button {
-    cursor: pointer;
-    color: blue;
-}
-.sqrt-button {
-    cursor: pointer;
-    color: green;
-}
-
+  .result-container {
+    background-color: #ffcccb; 
+    border: 2px solid #ff6666; 
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
