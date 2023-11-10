@@ -23,8 +23,10 @@ export class UiComponent implements OnInit {
     this.result = myresult;
   }
 
-  substraction() {
-    alert("substraction here !");
+  power() {
+    let myresult = 0;
+    myresult = Math.pow(this.operator1, this.operator2);
+    this.result = myresult;
   }
 
 }

@@ -1,4 +1,4 @@
-import { exp } from "./exp"
+import { exp } from "./pow"
 
 describe('exp unit tests', () => {
     

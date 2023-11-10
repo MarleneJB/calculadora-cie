@@ -29,8 +29,17 @@
     cursor: pointer;
     color: blue;
 }
-.substraction-button {
+
+.addition-button:hover {
+    color: rgb(0, 170, 255);
+}
+.power-button {
+    margin: 10px;
     cursor: pointer;
-    color: green;
+    color: rgb(62, 0, 128);
+}
+
+.power-button:hover {
+    color: rgb(255, 0, 255);
 }
 
