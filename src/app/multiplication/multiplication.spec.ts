@@ -20,7 +20,7 @@ describe('multiplication unit tests', () => {
         expect(result).toBe(1.5);
     })
 
-    it(' Should mul 2.0 + 1.5 = 3.0', () => {
+    it(' Should mul 2.0 * 1.5 = 3.0', () => {
         let result = 0;
         result = multiplication(2.0, 1.5);
         expect(result).toBe(3.0);
