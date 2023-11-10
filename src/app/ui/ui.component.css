@@ -1,5 +1,11 @@
 .calculator {
-    width: 150px;
+    width: 250px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #999;
 }
@@ -7,30 +13,45 @@
 .result {
     font-size: 3.0em;
     font-weight: bold;
-    color: red;
+    color: rgb(247, 0, 255);
+    margin-bottom: 20px;
 
+   
 }
 
-.operator1 {
+.operator1{
     font-size: 1.5em;
     font-weight: bold;
     color: black;
-
 }
-
 .operator2 {
     font-size: 1.5em;
     font-weight: bold;
     color: blue;
-
 }
 
-.addition-button {
+
+.addition-button{
     cursor: pointer;
+    font-size: 2em;
+    transition: color 0.3s;
     color: blue;
 }
-.substraction-button {
+.multiplication-button {
     cursor: pointer;
+    font-size: 3em;
+    transition: color 0.3s;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
     color: green;
+    
 }
 
+.addition-button:hover {
+    color: #5ea6e6;
+}
+
+.multiplication-button:hover {
+    color: #85f2a0;
+}
