@@ -37,7 +37,7 @@
     transition: color 0.3s;
     color: blue;
 }
-.multiplication-button {
+.sqrt-button {
     cursor: pointer;
     font-size: 2em;
     transition: color 0.3s;
