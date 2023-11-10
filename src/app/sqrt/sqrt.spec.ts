@@ -13,7 +13,7 @@ describe('sqrt unit tests', () => {
 
         // Assert
         expect(result).toBe(5);
-    })
+    });
 
     it('Should compute sqrt (16) = 4', () => {
         // Arrange
@@ -22,7 +22,7 @@ describe('sqrt unit tests', () => {
         result = sqrt(16);
         // Assert
         expect(result).toBe(4);
-    })
+    });
 
     it('Should compute sqrt (9) = 3', () => {
         // Arrange
@@ -31,7 +31,7 @@ describe('sqrt unit tests', () => {
         result = sqrt(9);
         // Assert
         expect(result).toBe(3);
-    })
+    });
 
     it('Should compute sqrt (4) = 2', () => {
         // Arrange
@@ -40,7 +40,18 @@ describe('sqrt unit tests', () => {
         result = sqrt(4);
         // Assert
         expect(result).toBe(2);
-    })
+    });
 
+    it('Should compute sqrt (100) = 10', () => {
+        // Arrange
+        let result = 0;
+
+        // Act
+        result = sqrt(100);
+
+        // Assert
+        expect(result).toBe(10);
+
+    });
  
-})
+});
