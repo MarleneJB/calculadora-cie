@@ -42,13 +42,12 @@ describe('division unit tests', () => {
         expect(result).toBe(0);
     })
 
-    it('Should divide 0 / 0 = 0', () => {
+    it('Should divide 15 / 3 = 5', () => {
         // Arrange
         let result = 0;
         // Act
-        result = division(0, 0);
+        result = division(15, 3);
         // Assert
-        expect(result).toBe(0);
+        expect(result).toBe(5);
     })
-
 })
