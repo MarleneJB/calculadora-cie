@@ -1,52 +1,43 @@
 .calculator {
-    width: 150px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #fce6e6; /* Light pink background */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group-addon {
+    background-color: #f8d7da; /* Light red for addon background */
+    border: 1px solid #f5c6cb; /* Light red border for addon */
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.operations {
     text-align: center;
-    color: #999;
+    margin-bottom: 20px;
+}
+
+.glyphicon {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #ff1493; /* Deep pink color for icons */
+}
+
+.result-container {
+    text-align: center;
 }
 
 .result {
-    font-size: 3.0em;
+    font-size: 24px;
     font-weight: bold;
-    color: red;
-
+    color: #ff1493; /* Deep pink color for result text */
 }
-
-.operator1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: black;
-
-}
-
-.operator2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: blue;
-
-}
-
-.addition-button {
-    cursor: pointer;
-    color: blue;
-}
-.substraction-button {
-    cursor: pointer;
-    color: green;
-}
-
-.division-button {
-    cursor: pointer;
-    color: red;
-}
-
-.sqrt-button {
-    cursor: pointer;
-    color: rgb(28, 59, 28);
-}
-
-.power-button {
-    cursor: pointer;
-    color: rgb(28, 59, 28);
-}
-
-
