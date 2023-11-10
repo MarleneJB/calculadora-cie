@@ -181,8 +181,91 @@ describe('Ui Addition - Component', () => {
     // Assert
     expect(el.innerText).toContain('8');
   });
+
+  it('Should render sqrt in result div', () => {
+    //Arrange
+    component.operator1 = 16;
   
-});
+  
+    //Act
+    component.sqrt();
+    fixture.detectChanges();
+  
+    let de = fixture.debugElement.query(By.css('.result'));
+    let el : HTMLElement = de.nativeElement;
+  
+    //Assert
+    expect(el.innerText).toContain('4');
+    });
+   
+    it('Should calculate sqrt root when I click the sqrt root button', () => {
+      // Arrange
+      component.operator1 = 25;
+      const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
+    
+      // Act
+      sqrtButton.triggerEventHandler('click', null);
+    
+      // Assert
+      expect(component.result).toBe(5);
+    });
+  
+    it('Should calculate sqrt root when I click the sqrt root button', () => {
+      // Arrange
+      component.operator1 = 4;
+      const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
+    
+      // Act
+      sqrtButton.triggerEventHandler('click', null);
+    
+      // Assert
+      expect(component.result).toBe(2);
+    });
+
+    it('Should render substraction in result div', () => {
+      //Arrange
+      component.operator1 = 5;
+      component.operator2 = 2.5;
+  
+      //Act
+      component.substraction();
+      fixture.detectChanges();
+  
+      let de = fixture.debugElement.query(By.css('.result'));
+      let el : HTMLElement = de.nativeElement;
+  
+      //Assert
+      expect(el.innerText).toContain('2.5');
+    });
+    it('Should substract operator1 and operator2 when i click the substraction button ', () => {
+      // Arrange 
+      component.operator1 = 5.0;
+      component.operator2 = 2.5;
+      let substractionButton = fixture.debugElement.query(By.css('.substraction-button'));
+  
+      // Act
+      substractionButton.triggerEventHandler('click', null);
+  
+      // Assert
+      expect(component.result).toBe(2.5);
+  
+     });
+     it('Should call substraction method', () => {
+      // Arrange
+      let result = 0;
+      component.operator1 = 9;
+      component.operator2 = 3;
+  
+      // Act
+      component.substraction();
+      result = component.result;
+  
+      // Assert
+      expect(result).toBe(6);
+   });
+  
+  });
+  
 
 
 

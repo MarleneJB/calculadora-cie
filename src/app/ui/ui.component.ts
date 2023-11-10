@@ -24,6 +24,9 @@ export class UiComponent implements OnInit {
   }
 
   substraction() {
+    let myresult = 0;
+    myresult = this.operator1 - this.operator2;
+    this.result = myresult;
    
   }
 
@@ -36,6 +39,12 @@ export class UiComponent implements OnInit {
   power() {
     let myresult = 0;
     myresult = Math.pow(this.operator1, this.operator2);
+    this.result = myresult;
+  }
+
+  sqrt() {
+    let myresult = 0;
+    myresult = Math.sqrt(this.operator1);
     this.result = myresult;
   }
 
