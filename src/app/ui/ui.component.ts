@@ -24,7 +24,9 @@ export class UiComponent implements OnInit {
   }
 
   substraction() {
-    alert("substraction here !");
+    let myresult = 0;
+    myresult = this.operator1 - this.operator2;
+    this.result = myresult;
   }
 
 }

@@ -2,17 +2,17 @@ import { substraction } from "./substraction"
 
 describe('substraction unit tests', () => {
     
-    it('Should subs 0 - 2 = -2', () => {
+    it('Should subs 0 - 4 = -4', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
         let result = 0;
         
         // Act
-        result = substraction(0, 2);
+        result = substraction(0, -4);
 
         // Assert
-        expect(result).toBe(-2);
+        expect(result).toBe(-4);
     })
 
     it('Should subs 9 - 3 = 6', () => {
@@ -33,13 +33,13 @@ describe('substraction unit tests', () => {
         expect(result).toBe(3.0);
     })
 
-    it('Should subs 2.7 - 0.7 = 2.0', () => {
+    it('Should subs 5 - 2.5 = 2.5', () => {
         // Arrange
         let result = 0;
         // Act
-        result = substraction(2.7, 0.7);
+        result = substraction(5, 2.5);
         // Assert
-        expect(result).toBe(2.0);
+        expect(result).toBe(2.5);
     })
 
 })
