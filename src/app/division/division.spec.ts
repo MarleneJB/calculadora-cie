@@ -2,14 +2,14 @@ import { division } from "./division"
 
 describe('division unit tests', () => {
     
-    it('Should divide 2 / 2 = 1', () => {
+    it('Should divide 3 / 3 = 1', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
         let result = 0;
         
         // Act
-        result = division(2, 2);
+        result = division(3, 3);
 
         // Assert
         expect(result).toBe(1);
@@ -38,6 +38,15 @@ describe('division unit tests', () => {
         let result = 0;
         // Act
         result = division(0, 1);
+        // Assert
+        expect(result).toBe(0);
+    })
+
+    it('Should divide 0 / 0 = 0', () => {
+        // Arrange
+        let result = 0;
+        // Act
+        result = division(0, 0);
         // Assert
         expect(result).toBe(0);
     })
