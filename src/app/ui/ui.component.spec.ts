@@ -98,6 +98,91 @@ describe('Ui Addition - Component', () => {
     expect(el.innerText).toContain('10');
      
   });
+  it('Should render division in result div', () => {
+    //Arrange
+    component.operator1 = 3;
+    component.operator2 = 3;
+  
+    //Act
+    component.division();
+    fixture.detectChanges();
+  
+    let de = fixture.debugElement.query(By.css('.result'));
+    let el : HTMLElement = de.nativeElement;
+  
+    //Assert
+    expect(el.innerText).toContain('1');
+   });
+   it('Should divide operator1 by operator2 when I click the division button', () => {
+    // Arrange
+    component.operator1 = 5;
+    component.operator2 = 2;
+    let divisionButton = fixture.debugElement.query(By.css('.division-button'));
+  
+    // Act
+    divisionButton.triggerEventHandler('click', null);
+  
+    // Assert
+    expect(component.result).toBe(2.5);
+  });
+  it('Should call division method', () => {
+    // Arrange
+    let result = 0;
+    component.operator1 = 3;
+    component.operator2 = 2;
+  
+    // Act
+    component.division();
+    result = component.result;
+  
+    // Assert
+    expect(result).toBe(1.5);
+  });
+  
+  it('Should call power method', () => {
+    // Arrange
+    let result = 0;
+    component.operator1 = 3;
+    component.operator2 = 0;
+  
+    // Act
+    component.power();
+    result = component.result;
+  
+    // Assert
+    expect(result).toBe(0);
+  });
 
+  it('Should power operator1 to operator2 when I click the power button', () => {
+    // Arrange
+    component.operator1 = 2;
+    component.operator2 = 2;
+    let powerButton = fixture.debugElement.query(By.css('.power-button'));
+  
+    // Act
+    powerButton.triggerEventHandler('click', null);
+  
+    // Assert
+    expect(component.result).toBe(4);
+  });
+
+  it('Should render power in result div', () => {
+    // Arrange
+    component.operator1 = 2;
+    component.operator2 = 3;
+  
+    // Act
+    component.power();
+    fixture.detectChanges();
+  
+    let de = fixture.debugElement.query(By.css('.result'));
+    let el: HTMLElement = de.nativeElement;
+  
+    // Assert
+    expect(el.innerText).toContain('8');
+  });
+  
 });
+
+
 

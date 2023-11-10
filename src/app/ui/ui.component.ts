@@ -24,7 +24,19 @@ export class UiComponent implements OnInit {
   }
 
   substraction() {
-    alert("substraction here !");
+   
+  }
+
+  division() {
+    let myresult = 0;
+    myresult = this.operator1 / this.operator2;
+    this.result = myresult;
+  }
+
+  power() {
+    let myresult = 0;
+    myresult = Math.pow(this.operator1, this.operator2);
+    this.result = myresult;
   }
 
 }

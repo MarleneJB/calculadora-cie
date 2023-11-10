@@ -1,4 +1,4 @@
-import { exp } from "./exp"
+import { exp } from "./pow"
 
 describe('exp unit tests', () => {
     
@@ -42,5 +42,13 @@ describe('exp unit tests', () => {
         expect(result).toBe(8);
     })
 
+    it('Should pow 3 ^ 0 = 1', () => {
+        // Arrange
+        let result = 0;
+        // Act
+        result = exp(3, 0);
+        // Assert
+        expect(result).toBe(1);
+    })
 
 })
