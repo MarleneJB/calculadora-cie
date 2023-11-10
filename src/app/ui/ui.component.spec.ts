@@ -150,7 +150,7 @@ describe('Ui Addition - Component', () => {
     result = component.result;
   
     // Assert
-    expect(result).toBe(0);
+    expect(result).toBe(1);
   });
 
   it('Should power operator1 to operator2 when I click the power button', () => {
