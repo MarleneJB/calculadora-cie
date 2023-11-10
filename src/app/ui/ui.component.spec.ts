@@ -99,5 +99,45 @@ describe('Ui Addition - Component', () => {
      
   });
 
-});
 
+  it('Should render sqrt in result div', () => {
+  //Arrange
+  component.operator1 = 16;
+
+
+  //Act
+  component.sqrt();
+  fixture.detectChanges();
+
+  let de = fixture.debugElement.query(By.css('.result'));
+  let el : HTMLElement = de.nativeElement;
+
+  //Assert
+  expect(el.innerText).toContain('4');
+  });
+ 
+  it('Should calculate square root when I click the square root button', () => {
+    // Arrange
+    component.operator1 = 25;
+    const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
+  
+    // Act
+    sqrtButton.triggerEventHandler('click', null);
+  
+    // Assert
+    expect(component.result).toBe(5);
+  });
+
+  it('Should calculate square root when I click the square root button', () => {
+    // Arrange
+    component.operator1 = 4;
+    const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
+  
+    // Act
+    sqrtButton.triggerEventHandler('click', null);
+  
+    // Assert
+    expect(component.result).toBe(2);
+  });
+
+});

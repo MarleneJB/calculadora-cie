@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { addition } from "../addition/addition"
 
 @Component({
   selector: 'app-ui',
@@ -17,14 +16,10 @@ export class UiComponent implements OnInit {
   ngOnInit() {
   }
 
-  addition() {
+  sqrt() {
     let myresult = 0;
-    myresult = addition(this.operator1, this.operator2);
+    myresult = Math.sqrt(this.operator1);
     this.result = myresult;
-  }
-
-  substraction() {
-    alert("substraction here !");
   }
 
 }
