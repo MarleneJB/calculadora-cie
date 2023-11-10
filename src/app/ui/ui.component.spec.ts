@@ -116,7 +116,7 @@ describe('Ui Addition - Component', () => {
   expect(el.innerText).toContain('4');
   });
  
-  it('Should calculate square root when I click the square root button', () => {
+  it('Should calculate sqrt root when I click the sqrt root button', () => {
     // Arrange
     component.operator1 = 25;
     const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
@@ -128,7 +128,7 @@ describe('Ui Addition - Component', () => {
     expect(component.result).toBe(5);
   });
 
-  it('Should calculate square root when I click the square root button', () => {
+  it('Should calculate sqrt root when I click the sqrt root button', () => {
     // Arrange
     component.operator1 = 4;
     const sqrtButton = fixture.debugElement.query(By.css('.sqrt-button'));
